@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo Dojo</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="top">
+        <nav class="navegacion">
+            <h1 class="nav-title">Tiempo Dojo</h1>
+            <ul class="nav-cities">
+                <li><a onclick="mensajeAlerta()" href="#">Chicago</a></li>
+                <li><a onclick="mensajeAlerta()" href="#">Burbank</a></li>
+                <li><a onclick="mensajeAlerta()" href="#">Dallas</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="contenedor-principal">
+        <div class="ciudad-temperatura">
+            <h2>San Jose</h2>
+            <div class="cambiar-temperatura">
+                <p>Mostrar la temperatura en:</p>
+                <select onchange="cambiarUnidadMedida(this)" name="selectorTemperatura">
+                    <option>°c</option>
+                    <option>°f</option>
+                </select>
+            </div>
+            
+        </div>
+
+        <div class="pronostico">
+            <div class="card-pronostico">
+                <h3>Hoy</h3>
+                <img src="./assets/some_rain.png" alt="Lluvioso" class="img-tiempo">
+                <p> Lluvioso </p>
+                <div class="max-min-temperatura">
+                    <p class="maxima">23</p>
+                    <p class="minima">13</p>
+                </div>
+            </div>
+            <div class="card-pronostico">
+                <h3>Mañana</h3>
+                <img src="./assets/some_clouds.png" alt="Nublado" class="img-tiempo">
+                <p> Nublado</p>
+                <div class="max-min-temperatura">
+                    <p class="maxima">25</p>
+                    <p class="minima">16</p>
+                </div>
+            </div>
+            <div class="card-pronostico">
+                <h3>Viernes</h3>
+                <img src="./assets/some_sun.png" alt="Soleado" class="img-tiempo">
+                <p> Soleado</p>
+                <div class="max-min-temperatura">
+                    <p class="maxima">28</p>
+                    <p class="minima">16</p>
+                </div>
+            </div>
+            <div class="card-pronostico">
+                <h3>Sábado</h3>
+                <img src="./assets/some_rain.png" alt="Lluvioso" class="img-tiempo">
+                <p>Lluvioso</p>
+                <div class="max-min-temperatura">
+                    <p class="maxima">23</p>
+                    <p class="minima">14</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mensaje-alerta">
+            <img src="./assets/cookie.png" alt="cookie" class="cookie-img">
+            <div class="contenido-alerta">
+                <h3>Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more</a></p>
+            </div>
+            <button onclick="cerrarAlerta(this)" type="button" class="btn">I accept </button>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

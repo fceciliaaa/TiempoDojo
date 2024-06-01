@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top{
+    background-color: #4fd4c3;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.navegacion{
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    padding-left: 0;
+}
+
+.nav-title{
+    font-size: 35px;
+}
+
+.nav-cities{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
+    width: 500px;
+    gap:50px;
+}
+
+.nav-cities a{
+    text-decoration: none;
+    color: #fff;;
+}
+.contenedor-principal{
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.ciudad-temperatura{
+    border-bottom: 2px solid #4b4b4b;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pronostico{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cambiar-temperatura{
+    display: flex;
+    align-items: end;
+    gap: 12px;
+}
+
+.card-pronostico{
+    height: 250px;
+    width: 150px;
+    background-color: #e4e4e4;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-tiempo, .cookie-img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.max-min-temperatura{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.maxima{
+    color: rgb(212, 28, 28);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.minima{
+    color:rgb(16, 149, 238);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.mensaje-alerta{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #4b4b4b;
+}
+.btn{
+    background-color: #4fd4c3;
+    width: 120px;
+    height: 40px;
+    border: 2px solid #000;
+    box-shadow: 4px 4px #000;
+    font-size: 1rem;
+    cursor: pointer;
+}
